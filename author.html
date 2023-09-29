@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Author</title>
+    </head>
+ 
+<body>
+    <h1>Author entry Sri Sai Krishna Bathula</h1>
+
+    <h2>Getting input</h2>
+
+
+
+    <form>
+        <label for="secretValue">The hidden author name: </label>
+        <input type ="password" id="secret" value="Dickens"> <br>
+
+        <label for="guessAuthor">Guess the author</label>
+        <input type ="text" id="guessAuthor"><br>
+
+        <input type="button" onclick="checkAuthor()" value="Check the guess">
+    </form>
+
+    <p id="result">Result</p>
+
+    <script> 
+
+    var good = 0;
+    var oops = 0;
+
+    function checkAuthor(){
+        //Get values from input
+        console.log("Getting form values")
+        var secretName = document.getElementById("secret").value;
+        var guessinput = document.getElementById("guessAuthor").value;
+        
+
+        <!--Compare both inputs-->
+        out = document.getElementById("result")
+
+        if(secretName==guessinput){
+            good++
+            alert("You got it right");
+            
+        } else {
+            oops++;
+            alert("Sorry")
+        }
+
+        result.innerHTML = "Good:" + good + ",OOPS" + oops;
+
+    }
+    </script>
+
+</body>
+</html> 
