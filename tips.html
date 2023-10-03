@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tips</title>
+    </head>
+ 
+ 
+    <body>
+
+    <header>Sri Sai Krishna shows tip amounts</header>
+    
+    <label for = "base-tip">Enter base amount: </label>
+    <input type = "number" id="base-tip" value="50">
+
+    <label for ="tip-percentage">Enter the tip percent: </label>
+    <input type="number" id="tip-percentage" value="15">
+
+    <button onclick="tips()">Show tip</button>
+
+    <div id="result"></div>
+
+    <script>
+        function tips(){
+            const baseAmt = parseInt(document.getElementById("base-tip").value);
+            const tipPer = parseInt(document.getElementById("\ntip-percentage").value);
+
+            let toShow = "Tips are: ";
+
+            for(let i=0; i<5; i++){
+                const calTip = (baseAmt * (tipPer + i *4))/100;
+
+                toShow += `${tipPer + i * 4}% is ${calTip.toFixed(2)}; `;
+            }
+
+            document.getElementById("result").innerHTML = toShow;
+        }
+    </script>
+
+
+
+
+    
+    </body>
+</html> 
