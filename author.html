@@ -49,5 +49,36 @@
     }
     </script>
 
+    <!--Part 4-->
+    <div id="image-container">
+        <img id="city-image" src="Bengaluru.jpg" alt="Bengaluru" width="100" height="100" onclick="selectImage()">
+    </div>
+
+    <script>
+        let Image = 1;
+
+        function selectImage(){
+            const cityImg = document.getElementById("city-image");
+
+            switch(Image){
+                case 1:
+                    cityImg.src = "Charminar.jpg";
+                    Image = 2;
+                    break;
+                case 2:
+                    cityImg.src = "Lucknow.jpg";
+                    Image = 3;
+                    break;
+                case 3:
+                    cityImg.src = "Bengaluru.jpg";
+                    Image = 1;
+                    break;
+            }
+        }
+    </script>
+
+    <!--Part 5-->
+    
+
 </body>
 </html> 
