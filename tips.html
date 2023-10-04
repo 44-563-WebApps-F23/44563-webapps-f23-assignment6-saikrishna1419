@@ -46,10 +46,8 @@
 
             for(let i=0; i<5; i++){
                 const calTip = (baseAmt * (tipPer + i *4))/100;
-
                 toShow += `${tipPer + i * 4}% is ${calTip.toFixed(2)}; `;
             }
-
             document.getElementById("result").innerHTML = toShow;
         }
    
