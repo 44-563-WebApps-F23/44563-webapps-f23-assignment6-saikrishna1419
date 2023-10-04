@@ -7,20 +7,28 @@
  
     <body>
 
-    <header>Sri Sai Krishna shows tip amounts</header>
+    <h1 style="background-color: rgb(248, 220, 184);">Sri Sai Krishna shows tip amounts</h1>
 
-    <!--part 5-->
+    <!--part 5 forms-->
     <label for = "base-tip">Enter base amount: </label>
-    <input type = "number" id="base-tip" value="50">
+    <input type = "number" id="base-tip" value="50"><br><br>
 
     <label for ="tip-percentage">Enter the tip percent: </label>
-    <input type="number" id="tip-percentage" value="15">
+    <input type="number" id="tip-percentage" value="15"><br><br>
 
-    <button onclick="tips()">Show tip</button>
+    <!--Part 6 forms-->
+    <form>
+        <label><input type="radio" name="operation" value="sum" onclick="choose0p()">Sum</label><br>
+        <label><input type="radio" name="operation" value="difference" onclick="choose0p()">Difference</label><br>
+        <label><input type="radio" name="operation" value="product" onclick="choose0p()">Product</label><br>
+    </form><br>
+
+    <button onclick="tips()">Show tip</button><br><br>
 
     <div id="result"></div>
 
     <script>
+        //part 5 Script
         function tips(){
             const baseAmt = parseInt(document.getElementById("base-tip").value);
             const tipPer = parseInt(document.getElementById("tip-percentage").value);
@@ -35,15 +43,8 @@
 
             document.getElementById("result").innerHTML = toShow;
         }
-    </script>
-
-    <!--Part 6-->
-    <form>
-        <label><input type="radio" name="operation" value="sum" onclick="choose0p()">Sum</label>
-        <label><input type="radio" name="operation" value="difference" onclick="choose0p()">Difference</label>
-        <label><input type="radio" name="operation" value="product" onclick="choose0p()">Product</label>
-    </form>
-    <script>
+   
+        //part 6 Script
         function choose0p(){
             const baseAmount = parseFloat(document.getElementById("base-tip").value);
             const tipPercent = parseFloat(document.getElementById("tip-percentage").value);
