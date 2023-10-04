@@ -8,7 +8,8 @@
     <body>
 
     <header>Sri Sai Krishna shows tip amounts</header>
-    
+
+    <!--part 5-->
     <label for = "base-tip">Enter base amount: </label>
     <input type = "number" id="base-tip" value="50">
 
@@ -42,7 +43,6 @@
         <label><input type="radio" name="operation" value="difference" onclick="choose0p()">Difference</label>
         <label><input type="radio" name="operation" value="product" onclick="choose0p()">Product</label>
     </form>
-
     <script>
         function choose0p(){
             const baseAmount = parseFloat(document.getElementById("base-tip").value);
@@ -66,13 +66,7 @@
             }
             document.getElementById("result").innerHTML=resultText;
         }
-
-        
     </script>
 
-
-
-
-    
     </body>
 </html> 
