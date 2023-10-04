@@ -22,7 +22,7 @@
     <script>
         function tips(){
             const baseAmt = parseInt(document.getElementById("base-tip").value);
-            const tipPer = parseInt(document.getElementById("\ntip-percentage").value);
+            const tipPer = parseInt(document.getElementById("tip-percentage").value);
 
             let toShow = "Tips are: ";
 
@@ -34,6 +34,40 @@
 
             document.getElementById("result").innerHTML = toShow;
         }
+    </script>
+
+    <!--Part 6-->
+    <form>
+        <label><input type="radio" name="operation" value="sum" onclick="choose0p()">Sum</label>
+        <label><input type="radio" name="operation" value="difference" onclick="choose0p()">Difference</label>
+        <label><input type="radio" name="operation" value="product" onclick="choose0p()">Product</label>
+    </form>
+
+    <script>
+        function choose0p(){
+            const baseAmount = parseFloat(document.getElementById("base-tip").value);
+            const tipPercent = parseFloat(document.getElementById("tip-percentage").value);
+            const selectedOperation = document.querySelector('input[name = "operation"]:checked').value;
+
+            let resultText ="";
+
+            switch(selectedOperation){
+                case "sum":
+                    resultText = `Sum of ${baseAmount} and ${tipPercent} is ${baseAmount + tipPercent}`;
+                    break;
+                case "difference":
+                resultText = `Difference between ${baseAmount} and ${tipPercent} is ${baseAmount - tipPercent}`;
+                    break;
+                case "product":
+                    resultText = `Product of ${baseAmount} and ${tipPercent} is ${baseAmount * tipPercent}`;
+                    break;
+                default:
+                    resultText = "select any one operation";        
+            }
+            document.getElementById("result").innerHTML=resultText;
+        }
+
+        
     </script>
 
 
