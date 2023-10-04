@@ -2,7 +2,7 @@
 # WebApps-F23-Assignment-6
 Introduction to Java Script and DOM<br>
 Hosted at [Web Page 1](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-saikrishna1419/)<br>
-Hosted at [Web Page 1](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-saikrishna1419/)<br>
-Hosted at [Web Page 1](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-saikrishna1419/)<br>
+Hosted at [Web Page 2](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-saikrishna1419/)<br>
+Hosted at [Web Page 3](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-saikrishna1419/)<br>
 
 
